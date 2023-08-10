@@ -1,24 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1ib-0i-Otv">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="aFw-eV-a6T">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="1ib-0i-Otv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eHw-Jz-oXy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Product Line" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cex-d2-dWa">
+                                <rect key="frame" x="103.66666666666667" y="413" width="185.66666666666663" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1S1T" translatesAutoresizingMaskIntoConstraints="NO" id="YMT-mo-0gl">
+                                <rect key="frame" x="0.0" y="108" width="393" height="307"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhz-NY-DDI">
+                                <rect key="frame" x="50" y="751" width="293" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qzb-nb-S3d"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Choose Product" imagePadding="6">
+                                    <imageReference key="image" image="apple.logo" catalog="system" variableValue="0.0"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BbJ-Hh-t7u" kind="presentation" id="gYS-E7-80d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5P9-4k-3aE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5P9-4k-3aE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cex-d2-dWa" secondAttribute="trailing" id="0Pg-vV-nab"/>
+                            <constraint firstItem="cex-d2-dWa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5P9-4k-3aE" secondAttribute="leading" id="0vH-9v-8L4"/>
+                            <constraint firstItem="5P9-4k-3aE" firstAttribute="trailing" secondItem="Yhz-NY-DDI" secondAttribute="trailing" constant="50" id="Hff-G0-GUx"/>
+                            <constraint firstItem="cex-d2-dWa" firstAttribute="centerX" secondItem="eHw-Jz-oXy" secondAttribute="centerX" id="W8Q-iK-x23"/>
+                            <constraint firstItem="cex-d2-dWa" firstAttribute="centerY" secondItem="eHw-Jz-oXy" secondAttribute="centerY" id="XC2-Jx-HqW"/>
+                            <constraint firstItem="Yhz-NY-DDI" firstAttribute="leading" secondItem="5P9-4k-3aE" secondAttribute="leading" constant="50" id="b0J-Mj-yO0"/>
+                            <constraint firstItem="Yhz-NY-DDI" firstAttribute="centerY" secondItem="eHw-Jz-oXy" secondAttribute="centerY" constant="350" id="j3a-e9-RPz"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lb-aC-JNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.244274809160306" y="10.563380281690142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4su-EG-Ryb">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="x19-8R-OY5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKn-aB-3Ah">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUb-SJ-MPU">
+                                <rect key="frame" x="50" y="741" width="293" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bJp-ER-Lnu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Choose Product" imagePadding="6">
+                                    <imageReference key="image" image="apple.logo" catalog="system" variableValue="0.0"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BbJ-Hh-t7u" kind="presentation" id="igW-DX-HIL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3S1T" translatesAutoresizingMaskIntoConstraints="NO" id="Xji-pE-vNI">
+                                <rect key="frame" x="50" y="109" width="293" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="knV-eL-0gD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwQ-aa-Xw3">
+                                <rect key="frame" x="178.66666666666666" y="379" width="42" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eZh-vR-t6j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lUb-SJ-MPU" firstAttribute="leading" secondItem="eZh-vR-t6j" secondAttribute="leading" constant="50" id="3SN-A9-i7g"/>
+                            <constraint firstItem="zwQ-aa-Xw3" firstAttribute="top" secondItem="Xji-pE-vNI" secondAttribute="bottom" constant="20" id="8Ic-ho-ljn"/>
+                            <constraint firstItem="eZh-vR-t6j" firstAttribute="trailing" secondItem="Xji-pE-vNI" secondAttribute="trailing" constant="50" id="8Pk-A6-VhO"/>
+                            <constraint firstItem="eZh-vR-t6j" firstAttribute="trailing" secondItem="lUb-SJ-MPU" secondAttribute="trailing" constant="50" id="Fyz-uz-8kS"/>
+                            <constraint firstItem="Xji-pE-vNI" firstAttribute="top" secondItem="eZh-vR-t6j" secondAttribute="top" constant="50" id="NZ5-KL-qhS"/>
+                            <constraint firstItem="lUb-SJ-MPU" firstAttribute="centerY" secondItem="SKn-aB-3Ah" secondAttribute="centerY" constant="340" id="TKo-tf-jIh"/>
+                            <constraint firstItem="Xji-pE-vNI" firstAttribute="leading" secondItem="eZh-vR-t6j" secondAttribute="leading" constant="50" id="dJF-Jo-1Ra"/>
+                            <constraint firstItem="zwQ-aa-Xw3" firstAttribute="centerX" secondItem="SKn-aB-3Ah" secondAttribute="centerX" constant="3" id="j2h-4z-bB3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5gl-hC-HDW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I65-h1-z3G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="755"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cG1-Qy-ukp">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4ZB-Bq-BbL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="439-Tx-n4P">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feh-FX-qCE">
+                                <rect key="frame" x="50" y="741" width="293" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QHV-OY-JnH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Choose Product" imagePadding="6">
+                                    <imageReference key="image" image="apple.logo" catalog="system" variableValue="0.0"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BbJ-Hh-t7u" kind="presentation" id="ele-cd-WDF"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4S1T" translatesAutoresizingMaskIntoConstraints="NO" id="ayU-Cw-MaD">
+                                <rect key="frame" x="50" y="109" width="293" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="0ri-Ms-CYg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD7-Dn-dyU">
+                                <rect key="frame" x="178" y="379" width="43" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cuv-Dp-AEl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ayU-Cw-MaD" firstAttribute="top" secondItem="Cuv-Dp-AEl" secondAttribute="top" constant="50" id="6Cl-ow-mTy"/>
+                            <constraint firstItem="Cuv-Dp-AEl" firstAttribute="trailing" secondItem="ayU-Cw-MaD" secondAttribute="trailing" constant="50" id="9D6-E9-tyn"/>
+                            <constraint firstItem="ayU-Cw-MaD" firstAttribute="leading" secondItem="Cuv-Dp-AEl" secondAttribute="leading" constant="50" id="LJh-Wo-Aad"/>
+                            <constraint firstItem="QD7-Dn-dyU" firstAttribute="top" secondItem="ayU-Cw-MaD" secondAttribute="bottom" constant="20" id="S6m-fg-YFC"/>
+                            <constraint firstItem="Feh-FX-qCE" firstAttribute="leading" secondItem="Cuv-Dp-AEl" secondAttribute="leading" constant="50" id="h7S-V5-Gyq"/>
+                            <constraint firstItem="Cuv-Dp-AEl" firstAttribute="trailing" secondItem="Feh-FX-qCE" secondAttribute="trailing" constant="50" id="hE8-DU-oav"/>
+                            <constraint firstItem="Feh-FX-qCE" firstAttribute="centerY" secondItem="439-Tx-n4P" secondAttribute="centerY" constant="340" id="vQA-zt-RBc"/>
+                            <constraint firstItem="QD7-Dn-dyU" firstAttribute="centerX" secondItem="ayU-Cw-MaD" secondAttribute="centerX" constant="3" id="ywB-b7-39I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wWo-KR-Ihw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aT2-nh-AVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256" y="768"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="kda-OJ-mYn">
+            <objects>
+                <viewController id="BbJ-Hh-t7u" customClass="MenuVC" customModule="FirstTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k60-fL-lqT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HV-Fl-ElM">
+                                <rect key="frame" x="70" y="209" width="253" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YpZ-Dj-xec"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="iphone" catalog="system" title="iPhone" imagePadding="4">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="iPhoneButton:" destination="BbJ-Hh-t7u" eventType="touchUpInside" id="qQ9-K7-J1s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wi-ym-XOA">
+                                <rect key="frame" x="70" y="309" width="253" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Kh-XP-3DQ"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="ipad.gen1" catalog="system" title="iPad">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <color key="baseForegroundColor" systemColor="systemMintColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="iPadButton:" destination="BbJ-Hh-t7u" eventType="touchUpInside" id="lso-9g-9eL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAD-6c-ZdY">
+                                <rect key="frame" x="70" y="409" width="253" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mKT-vS-93G"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="macbook.and.iphone" catalog="system" title="MacBook Pro">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="MacButton:" destination="BbJ-Hh-t7u" eventType="touchUpInside" id="xUJ-XB-a7Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NPA-Gl-1DB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LAD-6c-ZdY" firstAttribute="top" secondItem="2Wi-ym-XOA" secondAttribute="bottom" constant="50" id="1So-AZ-j0L"/>
+                            <constraint firstItem="2Wi-ym-XOA" firstAttribute="leading" secondItem="NPA-Gl-1DB" secondAttribute="leading" constant="70" id="9k2-Fa-5ye"/>
+                            <constraint firstItem="NPA-Gl-1DB" firstAttribute="trailing" secondItem="LAD-6c-ZdY" secondAttribute="trailing" constant="70" id="AxY-fV-JEi"/>
+                            <constraint firstItem="2Wi-ym-XOA" firstAttribute="top" secondItem="4HV-Fl-ElM" secondAttribute="bottom" constant="50" id="PKi-8l-1ae"/>
+                            <constraint firstItem="LAD-6c-ZdY" firstAttribute="centerX" secondItem="k60-fL-lqT" secondAttribute="centerX" id="V5g-O6-vdC"/>
+                            <constraint firstItem="4HV-Fl-ElM" firstAttribute="top" secondItem="NPA-Gl-1DB" secondAttribute="top" constant="150" id="XJs-Ty-imc"/>
+                            <constraint firstItem="2Wi-ym-XOA" firstAttribute="centerX" secondItem="k60-fL-lqT" secondAttribute="centerX" id="a59-UC-6Vo"/>
+                            <constraint firstItem="4HV-Fl-ElM" firstAttribute="leading" secondItem="NPA-Gl-1DB" secondAttribute="leading" constant="70" id="ld5-Oc-mEV"/>
+                            <constraint firstItem="4HV-Fl-ElM" firstAttribute="centerX" secondItem="k60-fL-lqT" secondAttribute="centerX" id="lnV-ba-8U9"/>
+                            <constraint firstItem="NPA-Gl-1DB" firstAttribute="trailing" secondItem="2Wi-ym-XOA" secondAttribute="trailing" constant="70" id="nAU-3y-ttv"/>
+                            <constraint firstItem="LAD-6c-ZdY" firstAttribute="leading" secondItem="NPA-Gl-1DB" secondAttribute="leading" constant="70" id="tM9-i1-e8J"/>
+                            <constraint firstItem="4HV-Fl-ElM" firstAttribute="centerX" secondItem="k60-fL-lqT" secondAttribute="centerX" id="uzG-GE-Zw2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="j00-Pi-4ap" kind="show" identifier="toiPhoneVC" id="D8n-9d-VfC"/>
+                        <segue destination="4ZB-Bq-BbL" kind="show" identifier="toiPadVC" id="3CR-1n-wfM"/>
+                        <segue destination="x19-8R-OY5" kind="show" identifier="toMacVC" id="ccL-lS-O8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHy-Bd-b60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.7709923664122" y="24.647887323943664"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7JU-Ud-Ibv">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="j00-Pi-4ap" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gK-mv-W2j">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2S1T" translatesAutoresizingMaskIntoConstraints="NO" id="oMX-px-M4v">
+                                <rect key="frame" x="50" y="109" width="293" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="07d-zQ-hDp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riN-RL-RyI">
+                                <rect key="frame" x="165.66666666666666" y="379" width="67.666666666666657" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0h-WO-IBN">
+                                <rect key="frame" x="50" y="741" width="293" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="S0I-3r-H2c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="apple.logo" catalog="system" title="Choose Product" imagePadding="6">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BbJ-Hh-t7u" kind="presentation" id="Pof-WV-Xqy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0ln-98-Tv0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oMX-px-M4v" firstAttribute="top" secondItem="0ln-98-Tv0" secondAttribute="top" constant="50" id="6rR-Z5-tFJ"/>
+                            <constraint firstItem="0ln-98-Tv0" firstAttribute="trailing" secondItem="a0h-WO-IBN" secondAttribute="trailing" constant="50" id="Bbn-im-WpH"/>
+                            <constraint firstItem="a0h-WO-IBN" firstAttribute="centerY" secondItem="5gK-mv-W2j" secondAttribute="centerY" constant="340" id="KAZ-cK-il6"/>
+                            <constraint firstItem="riN-RL-RyI" firstAttribute="centerX" secondItem="5gK-mv-W2j" secondAttribute="centerX" constant="3" id="bVu-yE-XjQ"/>
+                            <constraint firstItem="oMX-px-M4v" firstAttribute="leading" secondItem="0ln-98-Tv0" secondAttribute="leading" constant="50" id="f9J-Fc-YEo"/>
+                            <constraint firstItem="0ln-98-Tv0" firstAttribute="trailing" secondItem="oMX-px-M4v" secondAttribute="trailing" constant="50" id="hCt-nD-BaR"/>
+                            <constraint firstItem="a0h-WO-IBN" firstAttribute="leading" secondItem="0ln-98-Tv0" secondAttribute="leading" constant="50" id="saL-bc-FqB"/>
+                            <constraint firstItem="riN-RL-RyI" firstAttribute="top" secondItem="oMX-px-M4v" secondAttribute="bottom" constant="20" id="wOR-am-6j0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="23K-T1-4L0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dg6-yb-Dfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693.8931297709923" y="24.647887323943664"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ele-cd-WDF"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="1S1T" width="1600" height="1067"/>
+        <image name="2S1T" width="646" height="682"/>
+        <image name="3S1T" width="730" height="554"/>
+        <image name="4S1T" width="698" height="668"/>
+        <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <image name="ipad.gen1" catalog="system" width="109" height="128"/>
+        <image name="iphone" catalog="system" width="112" height="128"/>
+        <image name="macbook.and.iphone" catalog="system" width="128" height="73"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
